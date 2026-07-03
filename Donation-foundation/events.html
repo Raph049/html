@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="icon" type="image/ico" href="images/favicon.png">
+    <title>Upcoming Events | Donation Foundation</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <!-- Add Font Awesome CDN for social media icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        .hero-section {
+            background: url('images/news.jpg') center/cover no-repeat;
+        }
+        .card {
+            height: 500px; /* Fixed height for all cards */
+            display: flex;
+            flex-direction: column;
+            overflow: hidden; /* Prevent content from overflowing */
+        }
+        .card-body {
+            flex-grow: 1; /* Makes card body take up available space */
+            overflow-y: auto; /* Allow scrolling if content overflows */
+        }
+        .card img {
+            height: 200px; /* Fixed height for card image */
+            object-fit: cover; /* Ensures image covers the space without distortion */
+        }
+        .card-body .btn {
+            margin-top: auto; /* Pushes the button to the bottom of the card */
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- Header Section -->
+<header>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <h1 class="fw-bold">Donation<i class="text-white">Foundation</i></h1>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact Us</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            More
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="events.html#">Events</a></li>
+                            <li><a class="dropdown-item" href="donate.html">Donate</a></li>
+                            <li><a class="dropdown-item" href="sponsor.html">Sponsor</a></li>
+                            <li><a class="dropdown-item" href="blog.html">Blogs</a></li>
+                            <li><a class="dropdown-item" href="news.html">News</a></li>
+                            
+                        </ul>
+                    </li>
+                </ul>
+                <a href="donate.html" class="cta-btn">Donate Now</a>
+            </div>
+        </div>
+    </nav>
+</header>
+
+    <!-- Hero Section (Modified for Events) -->
+    <section class="hero-section">
+        <div class="hero-text">
+            <h2>Upcoming Events</h2>
+            <p>Join us at our upcoming events! Help us make a difference by participating in these exciting opportunities.</p>
+        </div>
+    </section>
+
+    <!-- Events Section -->
+    <section class="container my-5">
+        <div class="row">
+            <!-- Event 1 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="images/OIP.jpg" class="card-img-top" alt="Event ">
+                    <div class="card-body">
+                        <h5 class="card-title">Feed A Child</h5>
+                        <p class="card-text">Join us for a heartwarming event dedicated to feeding homeless children. Connect with compassionate individuals, learn from inspiring speakers, and enjoy a night of meaningful activities. Your participation will help make a difference in the lives of those in need. Let's come together to create lasting memories and positive change. See you there!</p>
+                        <p><strong>Date:</strong> December 25, 2024</p>
+                        <p><strong>Location:</strong> Kulima Tower, Kafue RD</p>
+                        
+                    </div>
+                </div>
+            </div>
+
+            <!-- Event 2 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="images/OIP (1).jpg" class="card-img-top" alt="Event ">
+                    <div class="card-body">
+                        <h5 class="card-title">SAVE CHILDREN</h5>
+                        <p class="card-text">Join us as we move around the vibrant Kabwata community, spreading hope and compassion to save homeless children. Together, we can make a lasting difference in their lives.</p>
+                        <p><strong>Date:</strong> March 11, 2025</p>
+                        <p><strong>Location:</strong> Kabwata, Downtown</p>
+                        
+                    </div>
+                </div>
+            </div>
+
+            <!-- Event 3 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="images/download.jpg" class="card-img-top" alt="Event 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Run for a Cause</h5>
+                        <p class="card-text">Lace up your running shoes and join us for a charity run! All proceeds will benefit our education initiative for underserved communities.</p>
+                        <p><strong>Date:</strong> April 22, 2025</p>
+                        <p><strong>Location:</strong> City Park, Riverside</p>
+                        
+                    </div>
+                </div>
+            </div>
+
+            <!-- Event 4 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="images/OIP (2).jpg" class="card-img-top" alt="Event 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Community Outreach Day</h5>
+                        <p class="card-text">Spend a day volunteering with us to help improve local neighborhoods. From food drives to clean-up efforts, every bit helps!</p>
+                        <p><strong>Date:</strong> May 10, 2025</p>
+                        <p><strong>Location:</strong> Central Square, Springfield</p>
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container my-5">
+        <h2 class="text-center mb-4">Upload an Event</h2>
+    
+        <div class="row justify-content-center">
+            <!-- Form Column -->
+            <div class="col-md-6">
+                <form action="" method="POST" enctype="multipart/form-data" style="max-width: 800px; margin: 0 auto;">
+                    <!-- Event Title -->
+                    <div class="mb-3">
+                        <label for="eventTitle" class="form-label">Event Title</label>
+                        <input type="text" class="form-control" id="eventTitle" name="eventTitle" required>
+                    </div>
+    
+                    <!-- Event Description -->
+                    <div class="mb-3">
+                        <label for="eventDescription" class="form-label">Event Description</label>
+                        <textarea class="form-control" id="eventDescription" name="eventDescription" rows="5" required></textarea>
+                    </div>
+    
+                    <!-- Event Date -->
+                    <div class="mb-3">
+                        <label for="eventDate" class="form-label">Event Date</label>
+                        <input type="date" class="form-control" id="eventDate" name="eventDate" required>
+                    </div>
+    
+                    <!-- Event Location -->
+                    <div class="mb-3">
+                        <label for="eventLocation" class="form-label">Event Location</label>
+                        <input type="text" class="form-control" id="eventLocation" name="eventLocation" required>
+                    </div>
+    
+                    <!-- Event Image Upload -->
+                    <div class="mb-3">
+                        <label for="eventImage" class="form-label">Event Image</label>
+                        <input type="file" class="form-control" id="eventImage" name="eventImage" accept="image/*" required>
+                    </div>
+    
+                    <!-- Submit Button -->
+                    <button type="submit" class="cta-btn" style="border: none;">Upload </button>
+                </form>
+            </div>
+    
+            <!-- Image Column -->
+            <div class="col-md-6">
+                <div class="donation-section position-relative text-center my-0">
+                    <img src="images/65.jpg" alt="Donate Today" class="img-fluid" style=" border-radius: 120px;width: 500px;; height: 600px;; object-fit:cover;">
+                    <!-- Button with the same class as the other donation buttons -->
+                      <!-- New text above the button with inline styles -->
+                    <div class="donation-text" style="position: absolute; top: 25%; left: 50%; transform: translateX(-50%); font-size: 1.5rem; font-weight: 600; color: white; text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); margin-bottom: 20px;">
+                        <h3>A family for every child in our lifetime</h3>
+                    </div>
+                    <a href="donate.html" class="cta-btn position-absolute top-50 start-50 translate-middle">
+                        Donate Today
+                    </a>
+                </div>
+    </section>
+    
+    
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <div class="footer-links">
+                <a href="about.html" class="footer-link">About Us</a>
+                <a href="events.html" class="footer-link">Events</a>
+                <a href="news.html" class="footer-link">News</a>
+                <a href="donate.html" class="footer-link">Donate</a>
+                <a href="sponsor.html" class="footer-link">Sponsor</a>
+                <a href="contact.html" class="footer-link">Contact Us</a>    
+            </div>
+            <p id="footer">&copy; 2025 DONATION FOUNDATION by Raph049 | All rights reserved</p>
+            <div class="social-icons">
+                <a href="#" class="social-icon" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                <a href="#" class="social-icon" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="#" class="social-icon" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="social-icon" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="social-icon" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="#" class="social-icon" target="_blank"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS, Popper.js, and jQuery -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

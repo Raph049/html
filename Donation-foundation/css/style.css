@@ -1,0 +1,271 @@
+
+html {
+    scroll-behavior: smooth;
+}
+/* Make the header sticky */
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000; /* Ensure the header is above other content */
+    background-color: #333; /* Optional: to give the header a background */
+}
+
+.navbar {
+    padding: 10px 0; /* Adjust the padding for your navbar */
+}
+
+/* Color Variables */
+:root {
+    --orange: #FF6F00; /* Orange primary color */
+    --black: #000000; /* Black (text, accents) */
+    --dark-gray: #333333; /* Dark gray (header, footer background) */
+    --light-gray: #F5F5F5; /* Light gray (body background, cards) */
+    --white: #ffffff; /* White (general text, background) */
+    --light-orange: #FFB74D; /* Lighter orange for hover effects */
+}
+
+/* General body styling */
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: var(--light-gray); /* Light gray background */
+    color: var(--black); /* Black text for general readability */
+}
+
+/* Navbar */
+.navbar-dark {
+    background-color: var(--orange); /* Orange navbar */
+}
+
+.navbar-nav .nav-link {
+    color: var(--white) !important; /* White text for navbar links */
+}
+
+.navbar-nav .nav-link:hover {
+    color: var(--light-orange) !important; /* Lighter orange on hover */
+}
+
+/* Hero Section */
+.hero-section {
+    position: relative;
+    height: 110vh;
+    color: var(--white);
+    border-radius: 2px;
+}
+    
+
+.hero-text {
+    background: rgba(0, 0, 0, 0.5); /* Black overlay with some opacity */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 40px;
+    text-align: center;
+    border-radius: 90px;
+}
+
+.hero-text h2 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.hero-text p {
+    font-size: 1.2rem;
+}
+.video-container {
+    display: flex;
+    justify-content: center; /* Horizontally center the video */
+    align-items: center; /* Vertically center the video */
+    height: 100%; /* Take up the full height of the parent container */
+    width: 100%; /* Take up the full width of the parent container */
+    margin: 0 auto; /* Center container if it's within a specific width */
+    padding: 20px; /* Optional: Add some padding around the video */
+    box-sizing: border-box; /* Ensure padding doesn't affect width */
+}
+
+.video-container iframe {
+    max-width: 100%; /* Ensure the video is responsive */
+    height: 12; /* Maintain aspect ratio */
+    border-radius: 10px; /* Optional: Add rounded corners to the video */
+}
+
+.cta-btn {
+    background: linear-gradient(45deg, #ff6b6b, #ff9f43); /* Gradient background */
+    color: #fff;
+    padding: 12px 30px; /* More padding for a larger button */
+    font-size: 18px; /* Slightly larger font size */
+    font-weight: 600; /* Bold font weight */
+    text-decoration: none;
+    border-radius: 30px; /* Rounded corners */
+    text-transform: uppercase; /* Uppercase letters */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    transition: all 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.cta-btn:hover {
+    background: linear-gradient(45deg, #ff9f43, #ff6b6b); /* Reverse gradient on hover */
+    transform: translateY(-2px); /* Lift the button slightly */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+    cursor: pointer; /* Change cursor to indicate clickability */
+}
+
+.cta-btn:focus {
+    outline: none; /* Remove default focus outline */
+    box-shadow: 0 0 0 3px rgba(255, 159, 67, 0.6); /* Outline on focus for accessibility */
+}
+
+
+/* Card and section styles */
+.card {
+    background-color: var(--white); /* White background for cards */
+    border: 1px solid var(--dark-gray); /* Dark gray border */
+}
+
+.card-header {
+    background-color: var(--orange); /* Orange card header */
+    color: var(--white);
+}
+
+.read-more-btn {
+    margin-top: 10px;  /* Add spacing between the content and the button */
+}
+.card-body {
+    color: var(--black);
+    /*margin:d-flex;*/
+    flex:column;
+}
+.card-bodyh {
+    color: var(--black);
+    display:flex;
+    margin :column;
+    flex:column;
+}
+.card-img-top {
+    width: 100%;                /* Make image fill the width of the card */
+    height: 300px;              /* Fixed height for images */
+    object-fit: cover;          /* Ensure the image fills the area without distorting */
+}
+
+/* Footer */
+footer {
+    background-color: var(--dark-gray); /* Dark gray footer */
+    color: var(--white);
+    padding: 30px 0;
+}
+
+footer a {
+    color: var(--white);
+}
+
+footer a:hover {
+    color: var(--light-orange);
+}
+
+/* Social Media Icons */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.social-icon {
+    font-size: 24px;
+    color: #333;
+    text-decoration: none;
+}
+
+.social-icon:hover {
+    color: #0056b3; /* Customize the hover effect */
+}
+
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .hero-text h2 {
+        font-size: 2.2rem;
+    }
+
+    .hero-text p {
+        font-size: 1rem;
+    }
+}
+#footer{
+    text-align: center;
+    
+}
+.banana{
+    justify-content: center;
+    text-align: center;
+    gap: 20px;
+    padding: 15px 30px;
+}
+.banana-btn{
+    background-color: var(--orange);
+    color: var(--white);
+    padding: 15px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-right: 20px; /* Adjust the gap as needed */
+    justify-content: center;
+}
+ /* Footer Links Centering */
+.footer-links {
+    justify-content: center; /* Center the links horizontally */
+    gap: 20px; /* Space between the links */
+    flex-wrap: wrap; /* Allows the links to wrap on smaller screens */
+    padding: 20px 0; /* Optional: to add some space around the footer links */
+    display: flex;
+    flex:row;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+.btn{
+    background-color: #FF6F00;
+
+}
+.card:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+.social-icon i {
+    font-size: 25px; /* Adjust size */
+    color: #e0e0e1; 
+    margin: 0 10px;
+    transition: transform 0.3s ease;
+}
+
+.social-icon:hover i {
+    transform: scale(1.1);
+}
+.donation-section {
+    margin-bottom: 0;
+}
+
+footer {
+    margin-top: 0;
+}
+/* Ensure the dropdown content is hidden by default */
+.nav-item.dropdown .dropdown-menu {
+    display: none; /* Hide the dropdown menu */
+    position: absolute; /* Position it under the parent item */
+    background-color: #ffffff; /* Optional: Adjust dropdown background */
+    border-radius: 5px; /* Optional: Rounded corners */
+    z-index: 1000; /* Ensure it appears above other content */
+}
+
+/* Show dropdown menu when hovering over the parent menu item */
+.nav-item.dropdown:hover .dropdown-menu {
+    display: block; /* Make it visible when hovering */
+}
+
+/* Optional: Add a slight hover effect to the dropdown items */
+.nav-item.dropdown .dropdown-menu .dropdown-item:hover {
+    background-color: #ff6f00; /* Darken background on hover */
+    color: white; /* Change text color on hover */
+}
+
+
+
